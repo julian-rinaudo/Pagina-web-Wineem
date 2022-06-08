@@ -45,6 +45,9 @@
                  /*RESPONSIVE DESIGN-*/
 /*Desktop*/
 @media (min-width: 1024px){
+    .rellenoPopup{
+        padding:0% 0% 0.3% 47%;
+    }
     .contenedor-grid{
         display: grid;
         grid-template-rows: 10% auto 10%;
@@ -357,6 +360,9 @@
 
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 1023px){
+    .rellenoPopup{
+        padding:0% 0% 0.3% 48%;
+    }
     .contenedor-grid{
         display: grid;
         grid-template-columns: 100%;
@@ -675,6 +681,9 @@
 
 /*Smartphone*/
 @media (max-width: 480px){
+    .rellenoPopup{
+        padding:0% 0% 0.3% 42%;
+    }
     .contenedor-grid{
         display: grid;
         grid-template-columns: 100%;
