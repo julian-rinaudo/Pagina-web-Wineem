@@ -46,7 +46,7 @@
 /*Desktop*/
 @media (min-width: 1024px){
     .rellenoPopup{
-        padding:0% 0% 0.3% 47%;
+        padding:0% 0% 0% 47%;
     }
     .contenedor-grid{
         display: grid;
@@ -94,6 +94,7 @@
     nav{
         margin-left: 17%;
     }
+    
     .carrito{
         margin-left: 25%;
     }
@@ -259,9 +260,7 @@
     .footer-catalogo{
         grid-area: footer;
     }
-    .logo-catalogo{
-        margin-left: 400px;
-    }
+    
     main div{
         display: flex;
         align-items: center;
@@ -361,7 +360,7 @@
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 1023px){
     .rellenoPopup{
-        padding:0% 0% 0.3% 48%;
+        padding:0% 0% 0% 48%;
     }
     .contenedor-grid{
         display: grid;
@@ -385,19 +384,35 @@
         justify-content:center ;
     }
     .wineem-logo{
-        margin-left: 23%;
+        margin-left: 17%;
         
         
     }
-    
+    .logo-nav-hamburguer{
+        margin-left: 110px;
+    }
     .carrito{
         margin-left: 20%;
+    }
+    .barra-navegacion{
         
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        font-size: 17px;
+        padding: 7px 13px;
+
+    }
+    .barra-navegacion:hover{
+        background-color: rgb(29, 29, 29);
+        color: white;
+        transition: 0.5s;
     }
     
     main{
         grid-area: main;
     }
+    
     .galeria{
         width: 100%;
         margin: 15px auto;
@@ -475,9 +490,7 @@
         
         
     }
-    .wineem-logo-accesorios-tablet{
-        margin-left: 65px;
-    }
+    
     .main-accesorios{
         grid-area: main;
     }
@@ -565,6 +578,9 @@
     }
     .main-catalogo{
         grid-area: main;
+    }
+    .logo-catalogo{
+        margin-left: 400px;
     }
     .footer-catalogo{
         grid-area: footer;
@@ -682,7 +698,7 @@
 /*Smartphone*/
 @media (max-width: 480px){
     .rellenoPopup{
-        padding:0% 0% 0.3% 42%;
+        padding:0% 0% 0% 42%;
     }
     .contenedor-grid{
         display: grid;
@@ -707,7 +723,24 @@
         justify-content:center ;
     }
     .wineem-logo{
-        margin-left: 15%;
+        margin-left: 5%;
+    }
+    .logo-nav-hamburguer{
+        margin-left: 110px;
+    }
+    .barra-navegacion{
+        
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-radius: 1rem;
+        font-size: 17px;
+        padding: 7px 13px;
+
+    }
+    .barra-navegacion:hover{
+        background-color: rgb(29, 29, 29);
+        color: white;
+        transition: 0.5s;
     }
     
     .carrito{
@@ -792,10 +825,10 @@
          margin-right: 10%;
     }
     .wineem-logo-accesorios-smartphone{
-        margin-left: 43%;
+        margin-left: 30%;
     }
     .carrito-accesorios{
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     .main-accesorios{
@@ -892,9 +925,13 @@
         
         
     }
+    .logo-catalogo{
+        margin-left: -50px;
+    }
     .main-catalogo{
         grid-area: main;
     }
+    
     .footer-catalogo{
         grid-area: footer;
     }

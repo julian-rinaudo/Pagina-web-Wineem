@@ -4,6 +4,7 @@
     <title>Trabaja con nosotros</title>
     <link rel="shortcut icon" href="../imagenes/favicon (1).ico" type="image/x-icon">
     <link rel="icon" href="../imagenes/favicon (1).ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
 
 </head>
@@ -12,7 +13,47 @@
 <body>
     <div class="conteiner-grid-trabajaconnosotros">
         <header class="header-trabajaconnosotros">
-            <a href="../index.html"><img src="../imagenes/Logo.png" alt="Logo de wineem" width="200" height="200"></a>
+            <!--barra de nav boostrap-->
+            <nav class="navbar   no-display-desktop">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"> <img src="../imagenes/hamburger_button_menu_icon_155296.png" alt="Menu Hamburguesa" width="25" height="25"></span>
+                    </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header logo-nav-hamburguer">
+                          <h5  class="offcanvas-title" id="offcanvasNavbarLabel"><a href="../index.html"><img  src="../imagenes/Logo.png" width="150" height="150" alt="Logo wineem"></a></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active barra-navegacion" aria-current="page"  href="../paginas/accesorios.html">Accesorios</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link barra-navegacion"  href="../paginas/catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item ">
+                              <a class="nav-link barra-navegacion"   href="../paginas/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link barra-navegacion" href="../paginas/trabaja con nosotros.html">Trabaja con Nosotros</a>
+                            </li>
+                      </ul>
+                      <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search " placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success "  type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+            <!--barra de nav boostrap-->
+            
+            <div class=" wineem-logo">
+                <a href="./index.html"><img  src="../imagenes/Logo.png" width="200" height="200" alt="Logo wineem"></a>
+                </div>
+                <img class="carrito no-display-desktop" src="../imagenes/shopping-bag.png" width="25" height="25" alt="Carrito de compra">
         </header>
         <main class="main-trabajaconnosotros">
             <section class="grid-trabajaconnosotros">
@@ -31,7 +72,7 @@
                 <a  href="https://www.facebook.com/espaciowineem/" target="_blank"><img src="../imagenes/Facebook-1.png" alt="Logo facebook" width="25" height="25"></a>
                 <a  href="https://www.youtube.com/channel/UClbEQOrmt7bMHKiDj9-aLKA" target="_blank"><img src="../imagenes/Youtube-1.png" alt="Logo youtube" width="25" height="25"></a>
             </div>
-            <nav class="no-display"
+            <nav class="no-display">
                 <ul>
                     <li> <a class="barra-navegacion-accesorios" href="./accesorios.html" target="_blank">Accesorios</a></li>
                     <li> <a class="barra-navegacion-accesorios" href="./catalogo.html" target="_blank"> Catálogo</a></li>  
@@ -41,6 +82,9 @@
             </nav>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 
 
