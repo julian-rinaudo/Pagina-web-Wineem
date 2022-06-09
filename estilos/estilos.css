@@ -235,6 +235,9 @@
         margin: 10px;
         
     }
+    .barra-navegacion-accesorios:hover{
+        color: rgb(170, 170, 170);
+    }
     footer nav{
         margin-left: 350px;
     }
@@ -298,11 +301,17 @@
         width: 500px;
         height: 280px;
     }
+    .conteiner-nosotros h1{
+        font-size: 20px;
+    }
+    .conteiner-nosotros h2{
+        font-size: 20px;
+    }
     .conteiner-nosotros p{
         font-weight: 300;
         font-size: 12px;
         font-style: italic;
-        line-height: 1.6;
+        line-height: 1.2;
     }
     .conteiner-grid-trabajaconnosotros{
         display: grid;
@@ -750,11 +759,13 @@
     main{
         grid-area: main;
     }
+    
     .galeria{
         width: 100%;
-        height: 90%;
+        height: 95%;
         margin: 15px auto;
         display: grid;
+
         grid-template-columns: 100%;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -775,6 +786,7 @@
         width: 250px;
         height: 250px;
         margin: auto;
+        
         
         
        
