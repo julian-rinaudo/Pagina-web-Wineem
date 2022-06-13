@@ -120,8 +120,8 @@
     }
     .imagen-1{
         grid-area: imagen1;
-        width: 1330px;
-        height: 507px;
+        width: 1300px;
+        height: 505.50px;
         
     }
     .imagen-2{
@@ -149,10 +149,13 @@
     footer{
         grid-area: footer;
         background-color: rgb(12, 12, 12);
-        color: white;
         display: flex;
         flex-direction: row;
         align-items: center;
+        
+    }
+    footer p{
+        margin-left: 500px;
     }
     .contenedor-grid-accesorios{
         display: grid;
@@ -178,6 +181,9 @@
     }
     .footer-accesorios{
         grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .galeria-accesorios{
         display: grid;
@@ -231,13 +237,15 @@
         font-weight: bold;
     }
     .logos{
-        margin: 5px;
+        margin: 2px;
+        
     }
     
     .barra-navegacion-accesorios{
         color: white;
         text-decoration: none;
         margin: 10px;
+        
         
     }
     .barra-navegacion-accesorios:hover{
@@ -482,6 +490,9 @@
         flex-direction: row;
         align-items: center;
     }
+    footer p{
+        margin-left: 300px;
+    }
     .contenedor-grid-accesorios{
         display: grid;
         grid-template-rows: 15% auto 10%;
@@ -697,8 +708,8 @@
     }
     .grid-trabajaconnosotros iframe{
         float: none;
-        margin-left: 5%;
-        width: 800px;
+        margin-left: 15%;
+        width: 600px;
         height: 300px;
     }
     .grid-trabajaconnosotros p{
@@ -842,6 +853,9 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+    footer p{
+        margin-left: 40px;
     }
     
     .contenedor-grid-accesorios{
