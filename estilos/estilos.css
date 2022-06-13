@@ -7,6 +7,7 @@
 .popUp{
     background-color: rgb(12, 12, 12); 
     font-size: 90%;
+    
 }
 .letraBlanca{
     color: white;
@@ -15,9 +16,13 @@
     animation-name: texto-animado;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    
 }
 .rellenoPopup{
     padding:0% 0% 0.3% 45%;
+}
+.envio{
+    margin-right: 10px;
 }
 
 @keyframes texto-animado{
@@ -46,7 +51,7 @@
 /*Desktop*/
 @media (min-width: 1024px){
     .rellenoPopup{
-        padding:0% 0% 0% 47%;
+        padding:0% 0% 0% 45%;
     }
     .contenedor-grid{
         display: grid;
@@ -369,7 +374,7 @@
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 1023px){
     .rellenoPopup{
-        padding:0% 0% 0% 48%;
+        padding:0% 0% 0% 45%;
     }
     .contenedor-grid{
         display: grid;
@@ -385,23 +390,22 @@
     .no-display{
         display: none;
     }
+    .logo-nav-hamburguer{
+        margin-left: 110px;
+    }
     header{
         grid-area: header;
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content:center ;
+        justify-content:space-around ;
     }
     .wineem-logo{
-        margin-left: 17%;
-        
-        
-    }
-    .logo-nav-hamburguer{
-        margin-left: 110px;
-    }
-    .carrito{
         margin-left: 20%;
+    }
+    
+    .carrito{
+        margin-left: 30%;
     }
     .barra-navegacion{
         
@@ -480,8 +484,8 @@
     }
     .contenedor-grid-accesorios{
         display: grid;
-        grid-template-rows: 20% auto 10%;
-        height: 100%;
+        grid-template-rows: 15% auto 10%;
+        height: 100vh;
         grid-template-areas: 
         "header"
         "main"
@@ -495,9 +499,13 @@
         justify-content: space-evenly;  
         flex-direction: row;
 
-         
-        
-        
+    }
+    .wineem-logo-accesorios-tablet{
+        margin-left: 80%;
+    }
+    
+    .carrito-accesorios{
+        margin-left: 30%;
     }
     
     .main-accesorios{
@@ -511,9 +519,8 @@
     }
     .galeria-accesorios{
         display: grid;
-        
         justify-items: center;
-        gap: 1%;
+        
         grid-template-columns: 1f 1fr;
         grid-template-rows: 1fr 1fr 2fr;
         grid-template-areas: 
@@ -525,11 +532,13 @@
         grid-area: imagen1;
         width: 300px;
         height: 300px;
+        margin-top: 50px;
     }
     .imagen2{
         grid-area: imagen2;
         width: 300px;
         height: 300px;
+        margin-top: 50px;
     }
     .imagen3{
         grid-area: imagen3;
@@ -569,7 +578,7 @@
     .contenedor-grid-catalogo{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 20% auto 10%;
+        grid-template-rows: 15% auto 10%;
         height: 100vh;
         grid-template-areas: 
         "header"
@@ -589,7 +598,10 @@
         grid-area: main;
     }
     .logo-catalogo{
-        margin-left: 400px;
+        margin-left: 30%;
+    }
+    .carrito-catalogo{
+        margin-left: 25%;
     }
     .footer-catalogo{
         grid-area: footer;
@@ -622,6 +634,13 @@
     .main-nosotros{
         grid-area: main;
     }
+    .wineem-logo-nosotros{
+        margin-left: 25%;
+    }
+    .carrito-nosotros{
+        margin-left: 25%;
+    }
+
     .footer-nosotros{
         grid-area: footer;
     }
@@ -651,7 +670,7 @@
     .conteiner-grid-trabajaconnosotros{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 20% auto 10%;
+        grid-template-rows: 15% auto 10%;
         height: 100vh;
         grid-template-areas: 
         "header"
@@ -663,6 +682,12 @@
     }
     .main-trabajaconnosotros{
         grid-area: main;
+    }
+    .logo-wineem-tcn{
+        margin-left: 45%;
+    }
+    .carrito-tcn{
+        margin-left: 20%;
     }
     .footer-trabajaconnosotros{
         grid-area: footer;
@@ -704,10 +729,11 @@
     }
     
 
-/*Smartphone*/
-@media (max-width: 480px){
+/*==== SMALL DEVICE ===== */
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
     .rellenoPopup{
-        padding:0% 0% 0% 42%;
+        padding:0% 0% 0% 35%;
     }
     .contenedor-grid{
         display: grid;
@@ -731,11 +757,9 @@
         align-items: center;
         justify-content:center ;
     }
-    .wineem-logo{
-        margin-left: 5%;
-    }
+    
     .logo-nav-hamburguer{
-        margin-left: 110px;
+        margin-left: 70px;
     }
     .barra-navegacion{
         
@@ -753,7 +777,7 @@
     }
     
     .carrito{
-        margin-left: 15%;
+        margin-left: 10%;
     }
     
     main{
@@ -822,7 +846,7 @@
     
     .contenedor-grid-accesorios{
         display: grid;
-        grid-template-rows: 20% auto 10%;
+        grid-template-rows: 15% auto 5%;
         height: 100vh;
         grid-template-areas: 
         "header"
@@ -833,14 +857,14 @@
     .header-accesorios{
         grid-area: header;
         display: flex; 
-        justify-content: space-around;  
+        justify-content: center;  
          margin-right: 10%;
     }
     .wineem-logo-accesorios-smartphone{
-        margin-left: 30%;
+        margin-left: 10px;
     }
     .carrito-accesorios{
-        margin-left: 120px;
+        margin-left: 30px;
     }
 
     .main-accesorios{
@@ -917,11 +941,12 @@
     .logos{
         margin: 2px;
         
+        
     }
     .contenedor-grid-catalogo{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 20% auto 10%;
+        grid-template-rows: 15% auto 5%;
         height: 100vh;
         grid-template-areas: 
         "header"
@@ -933,13 +958,9 @@
         display: flex;
         flex-direction: row;
         align-items:center;
-        justify-content: space-around;
-        
-        
+        justify-content: center;
     }
-    .logo-catalogo{
-        margin-left: -50px;
-    }
+    
     .main-catalogo{
         grid-area: main;
     }
@@ -947,7 +968,9 @@
     .footer-catalogo{
         grid-area: footer;
     }
-    
+    .carrito-catalogo{
+        margin-left: 30px;
+    }
     main div{
         display: flex;
         align-items: center;
@@ -961,7 +984,7 @@
     .contenedor-grid-nosotros{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% auto 7% ;
+        grid-template-rows: 15% auto 7% ;
         height: 100vh;
         
         grid-template-areas: 
@@ -984,10 +1007,13 @@
     .conteiner-nosotros iframe{
         float: none;
     
-        height: 200px;
-        width: 400px;
+        height: 150px;
+        width: 285px;
        
         
+    }
+    .carrito-nosotros{
+        margin-left: 30px;
     }
     .conteiner-nosotros p{
         font-weight: 300;
@@ -997,10 +1023,12 @@
     }
     h1{
         font-size: 15px;
+        font-weight: 700;
 
     }
     h2{
         font-size: 15px;
+        font-weight: 700;
     }
     .conteiner-grid-trabajaconnosotros{
         display: grid;
@@ -1015,6 +1043,9 @@
     .header-trabajaconnosotros{
         grid-area: header;
     }
+    .carrito-tcn{
+        margin-left: 10%;
+    }
     .main-trabajaconnosotros{
         grid-area: main;
     }
@@ -1027,13 +1058,14 @@
     .grid-trabajaconnosotros iframe{
         float: none;
         margin-left: 1%;
-        width: 400px;
-        height: 200px;
+        width: 285px;
+        height: 150px;
+        margin-bottom: 30px;
     }
     .grid-trabajaconnosotros p{
-        font-size: 15px;
+        font-size: 13px;
         font-style: italic;
-        line-height: 1.6;
+        line-height: 1;
         margin-left: 1%;
     }
     .boton{
@@ -1044,7 +1076,8 @@
        height: 50px;
        padding-left: 20px;
        margin-top: 30px;
-       margin-left: 29%;
+       margin-left: 23%;
+       margin-bottom: 30px;
        align-items: center;
        border-radius: 2rem;
        color: black;
@@ -1055,7 +1088,5 @@
         color: white;
     }
 
-    
-    
-    
 }
+
