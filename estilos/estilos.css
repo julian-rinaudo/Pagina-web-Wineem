@@ -24,6 +24,9 @@
 .envio{
     margin-right: 10px;
 }
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
 @keyframes texto-animado{
     0%{
@@ -199,43 +202,30 @@
     }
     .imagen1{
         grid-area: imagen1;
-        width: 300px;
-        height: 300px;
+        
     }
     .imagen2{
         grid-area: imagen2;
-        width: 300px;
-        height: 300px;
+        
     }
     .imagen3{
         grid-area: imagen3;
-        width: 300px;
-        height: 300px;
+        
     }
     .imagen4{
         grid-area: imagen4;
-        width: 300px;
-        height: 300px;
+        
     }
     .imagen5{
         grid-area: imagen5;
-        width: 300px;
-        height: 300px;
+        
     }
     .imagen6{
         grid-area: imagen6;
-        width: 300px;
-        height: 300px;
+        
     }
-    span{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-    p{
-        font-size: 12px;
-        font-weight: bold;
-    }
+    
+    
     .logos{
         margin: 2px;
         
