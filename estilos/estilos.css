@@ -28,6 +28,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+
 @keyframes texto-animado{
     0%{
         transform: translateX(-1300px);
@@ -132,23 +133,40 @@
         width: 400px;
         height: 400px;
         margin-left: 40px;
+        transition: 1s;
+        margin-top: 50px;
     }   
     .imagen-3{
         grid-area: imagen3;
         width: 400px;
         height: 400px;
         margin-left: 20px;
+        transition: 1s;
+        margin-top: 50px;
     }
     .imagen-4{
         grid-area: imagen4;
         width: 400px;
         height: 400px;
+        transition: 1s;
+        margin-top: 50px;
     }
     article{
         display: flex;
         flex-direction: row;
         
     }
+    .imagen-2:hover{
+        transform: scale(1.15)
+    }
+    .imagen-3:hover{
+        transform: scale(1.15)
+    }
+    .imagen-4:hover{
+        transform: scale(1.15)
+    }
+
+
     footer{
         grid-area: footer;
         background-color: rgb(12, 12, 12);
@@ -448,7 +466,8 @@
         width: 300px;
         height: 300px;
         margin-left: 15px;
-        
+        margin-top: 40px;
+        transition: 1s;
        
     }   
     .imagen-3{
@@ -456,6 +475,8 @@
         width: 300px;
         height: 300px;
         margin-left: 15px;
+        margin-top: 40px;
+        transition: 1s;
         
     }
 
@@ -464,7 +485,18 @@
         width: 300px;
         height: 300px;
         margin-left: 15px;
+        margin-top: 40px;
+        transition: 1s;
         
+    }
+    .imagen-2:hover{
+        transform: scale(1.15)
+    }
+    .imagen-3:hover{
+        transform: scale(1.15)
+    }
+    .imagen-4:hover{
+        transform: scale(1.15)
     }
     article{
         display: flex;  
@@ -747,9 +779,7 @@
         "footer"
         ;
     }
-    .no-display{
-        display: none;
-    }
+    
 
     header{
         grid-area: header;
@@ -784,10 +814,14 @@
     main{
         grid-area: main;
     }
+    .img-bnv-smarthphone{
+        width: 370px;
+        height: 390px;
+    }
     
     .galeria{
         width: 100%;
-        height: 95%;
+        height: 55%;
         margin: 15px auto;
         display: grid;
 
@@ -811,6 +845,7 @@
         width: 250px;
         height: 250px;
         margin: auto;
+        transition: 1s;
         
         
         
@@ -821,7 +856,8 @@
         width: 250px;
         height: 250px;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 30px;
+        transition: 1s;
         
     }
     .imagen-4{
@@ -829,8 +865,18 @@
         width: 250px;
         height: 250px;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 30px;
+        transition: 1s;
         
+    }
+    .imagen-2:hover{
+        transform: scale(1.15)
+    }
+    .imagen-3:hover{
+        transform: scale(1.15)
+    }
+    .imagen-4:hover{
+        transform: scale(1.15)
     }
     article{
         display: flex;  
