@@ -1,0 +1,48 @@
+@import "./variables";
+
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.popUp{
+    background-color: $color;
+    
+}
+body{
+    div{
+    p{
+        color: white;
+        font-size: 15px;
+        font-weight: 100;
+        animation-name: texto-animado;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        
+        img{
+            margin-right: 10px;
+        }
+    }
+    }
+}
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+@keyframes texto-animado{
+    0%{
+        transform: translateX(-1300px);
+    }
+    30%{
+        transform: translateX(0);
+    }
+    
+    80%{
+        transform: translateX(0); 
+    }
+    100%{
+        transform: translateX(1300px);
+    }
+}
