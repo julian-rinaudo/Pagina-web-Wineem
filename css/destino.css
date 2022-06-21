@@ -204,7 +204,7 @@ body div p img {
   .logo-nav-hamburguer {
     margin-left: 110px;
   }
-  header {
+  git header {
     grid-area: header;
     display: flex;
     flex-direction: row;
