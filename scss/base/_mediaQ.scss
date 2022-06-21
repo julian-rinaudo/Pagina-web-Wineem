@@ -82,29 +82,13 @@
             &:hover{
                 transform: scale(1.15);
             }
-            
+            }
         }
-    } //width:  ($ancho)-600px;
-      //height: ($alto)-100px;
-      //margin-left: 40px;
-      //transition: 1s;
-      //margin-top: 50px;
-
-     // &:hover{
-          //transform: scale(1.15)
-     // }
-
-
-
+        article{
+            display: flex;
+            flex-direction: row;
+        }
     }
-    article{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    }
-    
-    
     
     footer{
         grid-area: footer;
@@ -117,6 +101,7 @@
             margin-left: 500px;
         }
     }
+ }   
  
  /*Tablet*/
 @media (min-width: 481px) and (max-width: 1023px){

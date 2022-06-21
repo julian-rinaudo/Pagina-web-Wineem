@@ -172,22 +172,21 @@ body div p img {
   .galeria .imagen-4:hover {
     transform: scale(1.15);
   }
-  article {
+  .galeria article {
     display: flex;
     flex-direction: row;
   }
+  footer {
+    grid-area: footer;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  footer p {
+    margin-left: 500px;
+  }
 }
-footer {
-  grid-area: footer;
-  background-color: rgb(12, 12, 12);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-footer p {
-  margin-left: 500px;
-}
-
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 1023px) {
   .rellenoPopup {
