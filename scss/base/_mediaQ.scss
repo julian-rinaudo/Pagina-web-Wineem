@@ -337,6 +337,12 @@
             
         }
     }
+    //MAPS//
+   $estilos:(
+    fondo: black,
+    colors: white
+   );
+   //MAPS//
     .boton{
         display: inline-block;
         display: flex;
@@ -349,11 +355,12 @@
        border-radius: 2rem;
        color: black;
        border: solid;
-       
+       //MAP-GET//
        &:hover{
-        background-color: black;
-        color: white;
+        background-color:map-get($estilos, fondo );
+        color:map-get($estilos , colors );
        }
+       //MAP-GET//
     }
 
     .logo-wineem-tcn{
